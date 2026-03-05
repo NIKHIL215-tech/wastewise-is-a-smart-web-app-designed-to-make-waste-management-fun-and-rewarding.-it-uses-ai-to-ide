@@ -87,3 +87,4 @@ export async function GET() {
 | Initial | Template created with base setup |
 | 2026-03-05 | Built full WasteWise landing page — Navbar, Hero, Features, HowItWorks, Rewards, CTA, Footer components |
 | 2026-03-05 | Added AI Scan page (/scan) and AI Chat page (/chat); updated Navbar with links to both pages |
+| 2026-03-05 | Added 6 new feature pages: /start, /ar, /challenges, /barcode, /rewards, /community; updated Features cards, Hero CTAs, CTA buttons, HowItWorks CTA, and Navbar (More dropdown) to link to all pages |

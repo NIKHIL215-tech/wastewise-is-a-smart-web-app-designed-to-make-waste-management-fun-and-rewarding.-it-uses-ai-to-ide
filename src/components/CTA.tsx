@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function CTA() {
   return (
     <section className="py-24 relative overflow-hidden">
@@ -32,12 +34,12 @@ export default function CTA() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
-              <button className="w-full sm:w-auto bg-green-500 hover:bg-green-400 text-black font-bold text-base px-10 py-4 rounded-full transition-all hover:scale-105 hover:shadow-xl hover:shadow-green-500/30">
+              <Link href="/start" className="w-full sm:w-auto bg-green-500 hover:bg-green-400 text-black font-bold text-base px-10 py-4 rounded-full transition-all hover:scale-105 hover:shadow-xl hover:shadow-green-500/30 text-center">
                 🚀 Get Started Free
-              </button>
-              <button className="w-full sm:w-auto border border-gray-600 hover:border-green-500/50 text-gray-300 hover:text-white font-medium text-base px-10 py-4 rounded-full transition-all">
-                Download App
-              </button>
+              </Link>
+              <Link href="/scan" className="w-full sm:w-auto border border-gray-600 hover:border-green-500/50 text-gray-300 hover:text-white font-medium text-base px-10 py-4 rounded-full transition-all text-center">
+                📸 Try AI Scan
+              </Link>
             </div>
 
             {/* Trust signals */}

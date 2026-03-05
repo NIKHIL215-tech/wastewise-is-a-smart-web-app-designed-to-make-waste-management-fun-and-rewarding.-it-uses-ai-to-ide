@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const steps = [
   {
     step: "01",
@@ -108,9 +110,9 @@ export default function HowItWorks() {
               <p className="text-white font-semibold">Ready to make a difference?</p>
               <p className="text-gray-400 text-sm">Join 50,000+ eco-warriors already using WasteWise</p>
             </div>
-            <button className="ml-4 bg-green-500 hover:bg-green-400 text-black font-bold text-sm px-6 py-3 rounded-full transition-all hover:scale-105 whitespace-nowrap">
+            <Link href="/start" className="ml-4 bg-green-500 hover:bg-green-400 text-black font-bold text-sm px-6 py-3 rounded-full transition-all hover:scale-105 whitespace-nowrap">
               Join Now →
-            </button>
+            </Link>
           </div>
         </div>
       </div>

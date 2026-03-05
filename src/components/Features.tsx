@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const features = [
   {
     icon: "🤖",
@@ -8,6 +10,7 @@ const features = [
     color: "from-green-500/20 to-emerald-500/10",
     border: "border-green-500/20",
     badgeColor: "bg-green-500/10 text-green-400",
+    href: "/scan",
   },
   {
     icon: "🥽",
@@ -18,6 +21,7 @@ const features = [
     color: "from-teal-500/20 to-cyan-500/10",
     border: "border-teal-500/20",
     badgeColor: "bg-teal-500/10 text-teal-400",
+    href: "/ar",
   },
   {
     icon: "🏆",
@@ -28,6 +32,7 @@ const features = [
     color: "from-yellow-500/20 to-amber-500/10",
     border: "border-yellow-500/20",
     badgeColor: "bg-yellow-500/10 text-yellow-400",
+    href: "/challenges",
   },
   {
     icon: "📦",
@@ -38,6 +43,7 @@ const features = [
     color: "from-blue-500/20 to-indigo-500/10",
     border: "border-blue-500/20",
     badgeColor: "bg-blue-500/10 text-blue-400",
+    href: "/barcode",
   },
   {
     icon: "🎁",
@@ -48,6 +54,7 @@ const features = [
     color: "from-purple-500/20 to-pink-500/10",
     border: "border-purple-500/20",
     badgeColor: "bg-purple-500/10 text-purple-400",
+    href: "/rewards",
   },
   {
     icon: "🌍",
@@ -58,6 +65,7 @@ const features = [
     color: "from-emerald-500/20 to-green-500/10",
     border: "border-emerald-500/20",
     badgeColor: "bg-emerald-500/10 text-emerald-400",
+    href: "/community",
   },
 ];
 
@@ -88,9 +96,10 @@ export default function Features() {
         {/* Features grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature) => (
-            <div
+            <Link
               key={feature.title}
-              className={`relative group bg-gradient-to-br ${feature.color} border ${feature.border} rounded-2xl p-6 hover:scale-[1.02] transition-all duration-300 hover:shadow-lg`}
+              href={feature.href}
+              className={`relative group bg-gradient-to-br ${feature.color} border ${feature.border} rounded-2xl p-6 hover:scale-[1.02] transition-all duration-300 hover:shadow-lg block`}
             >
               {/* Icon */}
               <div className="text-4xl mb-4">{feature.icon}</div>
@@ -106,12 +115,12 @@ export default function Features() {
 
               {/* Arrow on hover */}
               <div className="mt-4 flex items-center gap-1 text-green-400 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
-                Learn more
+                Explore feature
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

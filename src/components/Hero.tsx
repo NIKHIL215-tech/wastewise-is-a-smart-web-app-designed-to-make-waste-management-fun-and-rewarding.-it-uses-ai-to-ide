@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
@@ -45,15 +47,15 @@ export default function Hero() {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-          <button className="w-full sm:w-auto bg-green-500 hover:bg-green-400 text-black font-bold text-base px-8 py-4 rounded-full transition-all hover:scale-105 hover:shadow-lg hover:shadow-green-500/25">
+          <Link href="/start" className="w-full sm:w-auto bg-green-500 hover:bg-green-400 text-black font-bold text-base px-8 py-4 rounded-full transition-all hover:scale-105 hover:shadow-lg hover:shadow-green-500/25 text-center">
             Start Recycling Smarter →
-          </button>
-          <button className="w-full sm:w-auto border border-gray-700 hover:border-green-500/50 text-gray-300 hover:text-white font-medium text-base px-8 py-4 rounded-full transition-all flex items-center justify-center gap-2">
+          </Link>
+          <Link href="/scan" className="w-full sm:w-auto border border-gray-700 hover:border-green-500/50 text-gray-300 hover:text-white font-medium text-base px-8 py-4 rounded-full transition-all flex items-center justify-center gap-2">
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
               <path d="M8 5v14l11-7z" />
             </svg>
-            Watch Demo
-          </button>
+            Try AI Scan
+          </Link>
         </div>
 
         {/* Stats */}
