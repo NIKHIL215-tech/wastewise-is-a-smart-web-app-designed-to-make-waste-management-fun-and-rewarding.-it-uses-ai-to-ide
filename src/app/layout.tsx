@@ -13,8 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Next.js Template",
-  description: "A minimal Next.js starter template",
+  title: "WasteWise – Smart Waste Management",
+  description:
+    "WasteWise uses AI to identify waste, suggest recycling solutions via AR tutorials, and rewards you for sustainable choices. Make waste management fun and impactful.",
 };
 
 export default function RootLayout({
