@@ -11,6 +11,89 @@ const navLinks = [
   { href: "/chat", label: "AI Chat" },
 ];
 
+const featuresDropdown = [
+  {
+    href: "/scan",
+    label: "AI Waste Scan",
+    description: "AI-powered waste identification",
+    icon: (
+      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h14a2 2 0 012 2v10a2 2 0 01-2 2h-2M9 5l4 4m0 0l-4 4m4-4H5" />
+      </svg>
+    ),
+  },
+  {
+    href: "/chat",
+    label: "AI Eco Chat",
+    description: "Chat with recycling expert",
+    icon: (
+      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+      </svg>
+    ),
+  },
+  {
+    href: "/start",
+    label: "Start Recycling",
+    description: "Your eco journey begins here",
+    icon: (
+      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+      </svg>
+    ),
+  },
+  {
+    href: "/ar",
+    label: "AR Tutorials",
+    description: "Augmented reality guidance",
+    icon: (
+      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h14a2 2 0 012 2v10a2 2 0 01-2 2h-2" />
+      </svg>
+    ),
+  },
+  {
+    href: "/challenges",
+    label: "Challenges",
+    description: "Compete & earn badges",
+    icon: (
+      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+      </svg>
+    ),
+  },
+  {
+    href: "/barcode",
+    label: "Eco Scanner",
+    description: "Scan product barcodes",
+    icon: (
+      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8H3a2 2 0 00-2 2v10a2 2 0 002 2h3.5M15 4H5a2 2 0 00-2 2v3" />
+      </svg>
+    ),
+  },
+  {
+    href: "/rewards",
+    label: "Rewards",
+    description: "Redeem your EcoPoints",
+    icon: (
+      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+      </svg>
+    ),
+  },
+  {
+    href: "/community",
+    label: "Community",
+    description: "Global eco-impact network",
+    icon: (
+      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    ),
+  },
+];
+
 const moreLinks = [
   {
     href: "/start",
@@ -129,7 +212,7 @@ export default function Navbar() {
               </Link>
             ))}
 
-            {/* More dropdown */}
+            {/* Features Dropdown */}
             <div className="relative">
               <button
                 onClick={() => setMoreOpen(!moreOpen)}
@@ -138,7 +221,7 @@ export default function Navbar() {
                   moreOpen ? "text-white bg-white/5" : "text-gray-400 hover:text-white hover:bg-white/5"
                 }`}
               >
-                More
+                Features
                 <svg
                   className={`w-3.5 h-3.5 transition-transform duration-200 ${moreOpen ? "rotate-180" : ""}`}
                   fill="none"
@@ -150,9 +233,12 @@ export default function Navbar() {
               </button>
 
               {moreOpen && (
-                <div className="absolute top-full right-0 mt-2 w-64 bg-[#0d1a12]/95 backdrop-blur-xl border border-white/[0.08] rounded-2xl shadow-2xl shadow-black/50 overflow-hidden animate-fade-in">
+                <div className="absolute top-full right-0 mt-2 w-80 bg-[#0d1a12]/95 backdrop-blur-xl border border-white/[0.08] rounded-2xl shadow-2xl shadow-black/50 overflow-hidden animate-fade-in">
                   <div className="p-2">
-                    {moreLinks.map((link) => (
+                    <div className="px-3 py-2 text-xs text-gray-500 font-semibold uppercase tracking-wider">
+                      All Features
+                    </div>
+                    {featuresDropdown.map((link) => (
                       <Link
                         key={link.href}
                         href={link.href}
