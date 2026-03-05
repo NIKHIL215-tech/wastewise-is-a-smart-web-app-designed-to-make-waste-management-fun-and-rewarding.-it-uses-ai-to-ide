@@ -85,3 +85,4 @@ export async function GET() {
 | Date | Changes |
 |------|---------|
 | Initial | Template created with base setup |
+| 2026-03-05 | Built full WasteWise landing page — Navbar, Hero, Features, HowItWorks, Rewards, CTA, Footer components |
