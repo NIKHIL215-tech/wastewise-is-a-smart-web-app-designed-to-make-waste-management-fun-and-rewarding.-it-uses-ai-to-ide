@@ -22,15 +22,21 @@ export default function Navbar() {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="#features" className="text-gray-400 hover:text-green-400 transition-colors text-sm font-medium">
+            <Link href="/#features" className="text-gray-400 hover:text-green-400 transition-colors text-sm font-medium">
               Features
-            </a>
-            <a href="#how-it-works" className="text-gray-400 hover:text-green-400 transition-colors text-sm font-medium">
+            </Link>
+            <Link href="/#how-it-works" className="text-gray-400 hover:text-green-400 transition-colors text-sm font-medium">
               How It Works
-            </a>
-            <a href="#rewards" className="text-gray-400 hover:text-green-400 transition-colors text-sm font-medium">
+            </Link>
+            <Link href="/#rewards" className="text-gray-400 hover:text-green-400 transition-colors text-sm font-medium">
               Rewards
-            </a>
+            </Link>
+            <Link href="/scan" className="text-gray-400 hover:text-green-400 transition-colors text-sm font-medium">
+              AI Scan
+            </Link>
+            <Link href="/chat" className="text-gray-400 hover:text-green-400 transition-colors text-sm font-medium">
+              AI Chat
+            </Link>
           </div>
 
           {/* CTA */}
@@ -62,15 +68,21 @@ export default function Navbar() {
         {/* Mobile Menu */}
         {menuOpen && (
           <div className="md:hidden py-4 border-t border-green-900/30 flex flex-col gap-4">
-            <a href="#features" className="text-gray-400 hover:text-green-400 transition-colors text-sm font-medium" onClick={() => setMenuOpen(false)}>
+            <Link href="/#features" className="text-gray-400 hover:text-green-400 transition-colors text-sm font-medium" onClick={() => setMenuOpen(false)}>
               Features
-            </a>
-            <a href="#how-it-works" className="text-gray-400 hover:text-green-400 transition-colors text-sm font-medium" onClick={() => setMenuOpen(false)}>
+            </Link>
+            <Link href="/#how-it-works" className="text-gray-400 hover:text-green-400 transition-colors text-sm font-medium" onClick={() => setMenuOpen(false)}>
               How It Works
-            </a>
-            <a href="#rewards" className="text-gray-400 hover:text-green-400 transition-colors text-sm font-medium" onClick={() => setMenuOpen(false)}>
+            </Link>
+            <Link href="/#rewards" className="text-gray-400 hover:text-green-400 transition-colors text-sm font-medium" onClick={() => setMenuOpen(false)}>
               Rewards
-            </a>
+            </Link>
+            <Link href="/scan" className="text-gray-400 hover:text-green-400 transition-colors text-sm font-medium" onClick={() => setMenuOpen(false)}>
+              AI Scan
+            </Link>
+            <Link href="/chat" className="text-gray-400 hover:text-green-400 transition-colors text-sm font-medium" onClick={() => setMenuOpen(false)}>
+              AI Chat
+            </Link>
             <button className="bg-green-500 hover:bg-green-400 text-black font-semibold text-sm px-5 py-2 rounded-full transition-all w-full">
               Get Started Free
             </button>
